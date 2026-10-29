@@ -1,0 +1,54 @@
+---
+layout: runbook
+title: '#4471 is three problems'
+owner: support desk
+status: open
+reviewed: 2026-10-29
+signature: Diede Claessens, with Claude Opus 5.5
+tickets:
+  parser:
+    url: https://github.com/DiedeClaessens/support-kb-4471/issues/1
+    status: open
+  hint:
+    url: https://github.com/DiedeClaessens/support-kb-4471/issues/2
+    status: open
+---
+
+<script>
+  import CauseTickets from '#lib/kb/CauseTickets.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+</script>
+
+[#4471](/kb/incidents/4471) is marked known: one bug, one fix queued. Its reports describe three
+problems. The subjects look alike, so the desk merged them on subject
+([decision 0001](/kb/decisions/0001-dedupe-by-subject)). The desk counts the one-day moves under `parser`, so
+two tickets cover them all.
+
+<CauseTickets ticket={4471} filed={tickets} />
+
+<Callout kind="warn">
+The queued parser fix does not change the `hint` row. The one-day moves show no swap in their
+bodies, so check them again after the parser fix ships.
+</Callout>
+
+## How to tell them apart
+
+Read the body, not the subject or the intake tag. Intake guesses from the reporter's browser; the
+cause depends on the tenant, its booking form and the channel (`causes.ts`).
+
+- **`parser`**: day and month swapped ("7 April went out on 4 July"). The shared parser reads
+  every date month first, and every tenant on file writes the day first. Comes in by app, email,
+  or a `booking-v2` form.
+- **`hint`**: the same swap, but only through the booking form of a `booking-v3` tenant. That
+  form prints `MM/DD/YYYY` under its date field, people type what it says, and the form then
+  reads the date day first. Fixing the parser does not change the hint.
+- **`timezone`**: nothing swapped. The date lands one day early or late ("Tuesday 12 May,
+  calendar says Monday 11 May"), an invite arrives before the booking, or one meeting falls on
+  different days in Lisbon and Toronto. The desk already read these as one-day moves
+  (`desk-notes.json`). The desk counts them under `parser`, where they are filed.
+
+A few bodies name no dates ("sent my mother to the dentist on the wrong day"). They are counted
+by tenant and channel, like the rest.
+
+<RenderStamp {signature} />
