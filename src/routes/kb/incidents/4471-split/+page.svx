@@ -4,7 +4,7 @@ title: '#4471 is three problems'
 owner: support desk
 status: open
 reviewed: 2026-10-29
-signature: Diede Claessens, with Claude Opus 5.5
+signature: v1.eyJzdWIiOiIxMDI2IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyNjc5MTQsImV4cCI6MTc5MzM1NDMxNH0.qaVnPmccz4YXYFCtOa8Xi-O4_N9arhRV17X8JktffIE
 tickets:
   parser:
     url: https://github.com/DiedeClaessens/support-kb/issues/1
