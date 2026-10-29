@@ -9,11 +9,11 @@
 		<link href="../../../_app/immutable/chunks/B2Ul7l_u.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/BCPXOG7W.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/Dh1V97Jm.js" rel="modulepreload">
-		<link href="../../../_app/immutable/entry/app.XZMwWfRp.js" rel="modulepreload">
+		<link href="../../../_app/immutable/entry/app.YJenYQoi.js" rel="modulepreload">
 		<link href="../../../_app/immutable/nodes/0.BurGglGN.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/DK3Fl9T5.js" rel="modulepreload">
-		<link href="../../../_app/immutable/nodes/5.C_oCoyU_.js" rel="modulepreload">
-		<link href="../../../_app/immutable/chunks/DmeowYJp.js" rel="modulepreload">
+		<link href="../../../_app/immutable/nodes/5.CcGk2nBG.js" rel="modulepreload">
+		<link href="../../../_app/immutable/chunks/t3PNCtJZ.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/BTPwLomz.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/CVBzP17p.js" rel="modulepreload">
 		<link href="../../../_app/immutable/chunks/BIy4WKJS.js" rel="modulepreload">
@@ -32,7 +32,7 @@ aside.svelte-17bri61{border-left:4px solid var(--accent);background:var(--note-b
     <div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><!--[--><!--[-1--><!--[--><div class="kb svelte-e2jw2j"><header><a class="crumb svelte-e2jw2j" href="/kb">support desk · kb</a> <h1 class="svelte-e2jw2j">#4471 is three problems</h1> <p class="meta svelte-e2jw2j"><span>owner <b>support desk</b></span> <span class="status open svelte-e2jw2j">open</span> <span class="svelte-e2jw2j">reviewed 2026-10-29 · 0 days ago</span></p></header> <!--[-1--><!--]--> <main><p><a href="/kb/incidents/4471">#4471</a> is marked known: one bug, one fix queued. Its reports describe three
 problems. The subjects look alike, so the desk merged them on subject
 (<a href="/kb/decisions/0001-dedupe-by-subject">decision 0001</a>). The desk counts the one-day moves under <code>parser</code>, so
-two tickets cover them all.</p> <p class="sum svelte-1n91i81"><strong>412</strong> reports in #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>cause</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th><th>status</th></tr></thead><tbody><!--[--><tr><td><code>parser</code></td><td>379</td><td>11</td><td>2026-04-01 → 2026-10-04</td><td><!--[0--><a href="https://github.com/DiedeClaessens/support-kb-4471/issues/1">#1</a><!--]--></td><td>open</td></tr><tr><td><code>hint</code></td><td>33</td><td>3</td><td>2026-04-17 → 2026-09-22</td><td><!--[0--><a href="https://github.com/DiedeClaessens/support-kb-4471/issues/2">#2</a><!--]--></td><td>open</td></tr><!--]--><!--[--><tr class="moved svelte-1n91i81"><td class="svelte-1n91i81"><code>timezone</code></td><td class="svelte-1n91i81">5</td><td colspan="2" class="svelte-1n91i81">one-day moves, counted under <code>parser</code></td><td class="svelte-1n91i81"><!--[0--><a href="https://github.com/DiedeClaessens/support-kb-4471/issues/1">#1</a><!--]--></td><td class="svelte-1n91i81">open</td></tr><!--]--></tbody></table><!----> <aside class="warn svelte-17bri61"><!---->The queued parser fix does not change the `hint` row. The one-day moves show no swap in their
+two tickets cover them all.</p> <p class="sum svelte-1n91i81"><strong>412</strong> reports in #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>cause</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th><th>status</th></tr></thead><tbody><!--[--><tr><td><code>parser</code></td><td>379</td><td>11</td><td>2026-04-01 → 2026-10-04</td><td><!--[0--><a href="https://github.com/DiedeClaessens/support-kb/issues/1">#1</a><!--]--></td><td>open</td></tr><tr><td><code>hint</code></td><td>33</td><td>3</td><td>2026-04-17 → 2026-09-22</td><td><!--[0--><a href="https://github.com/DiedeClaessens/support-kb/issues/2">#2</a><!--]--></td><td>open</td></tr><!--]--><!--[--><tr class="moved svelte-1n91i81"><td class="svelte-1n91i81"><code>timezone</code></td><td class="svelte-1n91i81">5</td><td colspan="2" class="svelte-1n91i81">one-day moves, counted under <code>parser</code></td><td class="svelte-1n91i81"><!--[0--><a href="https://github.com/DiedeClaessens/support-kb/issues/1">#1</a><!--]--></td><td class="svelte-1n91i81">open</td></tr><!--]--></tbody></table><!----> <aside class="warn svelte-17bri61"><!---->The queued parser fix does not change the `hint` row. The one-day moves show no swap in their
 bodies, so check them again after the parser fix ships.<!----></aside><!----> <h2>How to tell them apart</h2> <p>Read the body, not the subject or the intake tag. Intake guesses from the reporter's browser; the
 cause depends on the tenant, its booking form and the channel (<code>causes.ts</code>).</p> <ul><li><strong><code>parser</code></strong>: day and month swapped ("7 April went out on 4 July"). The shared parser reads
 every date month first, and every tenant on file writes the day first. Comes in by app, email,
@@ -46,16 +46,16 @@ by tenant and channel, like the rest.</p> <!--[0--><p class="stamp svelte-1280m4
 			
 			<script>
 				{
-					__sveltekit_1bhzg3d = {
+					__sveltekit_jxtv20 = {
 						base: new URL("../../..", location).pathname.slice(0, -1),
-						version: "1793267645361"
+						version: "1793267768920"
 					};
 
 					const element = document.currentScript.parentElement;
 
 					import("../../../_app/immutable/entry/start.CH5w6lId.js").then(async (kit) => {
-						kit.init(__sveltekit_1bhzg3d);
-						const app = await import("../../../_app/immutable/entry/app.XZMwWfRp.js");
+						kit.init(__sveltekit_jxtv20);
+						const app = await import("../../../_app/immutable/entry/app.YJenYQoi.js");
 						kit.start(app, element, {
 							node_ids: [0, 5],
 							data: [null,null],

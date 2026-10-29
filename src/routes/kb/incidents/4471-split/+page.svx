@@ -7,10 +7,10 @@ reviewed: 2026-10-29
 signature: Diede Claessens, with Claude Opus 5.5
 tickets:
   parser:
-    url: https://github.com/DiedeClaessens/support-kb-4471/issues/1
+    url: https://github.com/DiedeClaessens/support-kb/issues/1
     status: open
   hint:
-    url: https://github.com/DiedeClaessens/support-kb-4471/issues/2
+    url: https://github.com/DiedeClaessens/support-kb/issues/2
     status: open
 ---
 
